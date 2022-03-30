@@ -1,0 +1,19 @@
+.baby-name-container {
+  border: 5px solid rgb(248, 223, 235);
+  padding: 30px 15px;
+  font-size: large;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.baby-girl {
+  background-color: rgb(248, 185, 243);
+  color: rgb(99, 14, 28);
+  margin: 5px 5px;
+}
+
+.baby-boy {
+  background-color: rgb(113, 215, 247);
+   margin: 5px 5px;
+}
