@@ -1,12 +1,14 @@
 import React from "react";
 
-function FavoriteNames() {
-  
-
+function FavoriteNames(props) {
   return (
     <div>
-   <span>Favorites: </span>
-
+      <span>Favorites: </span>
+      {props.favoriteNames.map((baby) => (
+        <span className={baby.sex} onClick={() => props.removeFavName(baby)}>
+          {baby.name}
+        </span>
+      ))}
     </div>
   );
 }

@@ -19,12 +19,21 @@ function App() {
     console.log(searchName);
   };
 
+  const addFavName = (baby) => {
+    setFavoriteNames([...favoriteNames, baby]);
+  }
+
+  const removeFavName = (favBaby) => {
+    
+    setFavoriteNames(favoriteNames.filter(baby => baby.name !== favBaby.name ));
+  };
+
   return (
     <div className="baby-name-container">
       <SearchBar handleClick={handleClick} />
-      <FavoriteNames />
+      <FavoriteNames favoriteNames={favoriteNames} removeFavName={removeFavName}/>
       <hr />
-      <AllBabyNames sortedNames={sortedNames} />
+      <AllBabyNames sortedNames={sortedNames} addFavName={addFavName} />
       <hr />
     </div>
   );
