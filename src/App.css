@@ -36,3 +36,7 @@ hr{
   width: 80%;
   border-color: rgb(250, 245, 245);
 }
+
+input{
+  padding: 10px;
+}
